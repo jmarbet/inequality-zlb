@@ -65,7 +65,7 @@ function baselineConfig()
     generalConfig = baselineConfigGeneral()
 
     # Model settings
-    πTargets = reverse([1.7:0.1:1.9; collect(2.0:0.5:4.0)] / 100) # Inflation targets
+    πTargets = reverse([1.7:0.1:1.8; collect(2.0:0.5:4.0)] / 100) # Inflation targets
     σLevels = [0.075, 0.095] # Idiosyncratic volatility
     skipExistingConfigs = false
     onlyUseShocksForHomotopy = true
